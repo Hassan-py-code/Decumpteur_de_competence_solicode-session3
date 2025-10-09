@@ -31,14 +31,19 @@ body{
      display: flex;
      align-items: center;
      justify-content: space-between;
-     padding-inline: 4rem;
+     padding-inline: 5rem;
      background-color: var(--main-color);
      padding: 15px;
+     position: fixed;
+     width: 100%;
+     z-index: 999;
+     top: 0;
+     
 }
 
 .header .logo{
      font-weight: 600;
-     font-size: 1.2rem;
+     font-size: 1.4rem;
 }
 
 .header nav a{
@@ -46,16 +51,27 @@ body{
      font-weight: 500;
 }
 
+.menu{
+     display: none;
+}
+
+.menu i{
+     font-size: 2rem; 
+}
+
+
+/* Design home page */
 .home-page{
      display: flex;
      align-items: center;
      justify-content: space-evenly;
-     margin-top: 8%;
+     margin-top: 14%;
 }
+
+
 
 .home-page .content{
      max-width: 600px;
-
 }
 
 .home-page .content h1{
@@ -63,6 +79,18 @@ body{
       background: linear-gradient(90deg,var(--color3)15%,var(--white)85%);
    -webkit-background-clip:Text;
    -webkit-text-fill-color: transparent ;
+   margin-bottom: 10px;
+    
+}
+
+.home-page .content h1 span{
+       font-family: 'Kaushan Script', sans-serif;
+       border-bottom: 2px solid var(--white);  
+}
+
+.home-page .emoji{ 
+     font-size: 2.5rem;
+     
 }
 
 
@@ -112,4 +140,179 @@ body{
     100%{
          box-shadow: 0 0 40px var(--color3) , 0 0 50px  var(--color3) , 0 0   55px var(--color3);
     }
+}
+
+
+
+
+
+/* About Design  */
+.about_me{
+      margin-top: 10%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+}
+
+.about_me .About_content{
+     max-width: 900px;
+}
+
+.about_me .About_content h1{
+      text-align: center;
+      font-size: 2.8rem;
+     background: linear-gradient(90deg,var(--color3)15%,var(--white)85%);
+   -webkit-background-clip:Text;
+   -webkit-text-fill-color: transparent ;
+}
+
+.about_me .About_content  p {
+     margin-top: 15px;
+     margin-bottom: 20px;
+     line-height: 30px;
+}
+
+.about_me .About_content  p span{
+      
+     font-family: 'Kaushan Script', sans-serif;
+     color: var(--color3);
+     margin: 5px;
+     font-size: 1.3rem;
+     border-bottom: 2px solid var(--white);
+     /* text-shadow: 0 0 10px var(--white); */
+}
+
+
+.about_me .About_content .btn-about{
+      text-align: center;
+}
+
+.about_me .About_content .btn-about button{
+      background: linear-gradient(90deg,var(--color3)15%,var(--white)85%);
+      padding: 0.5rem 50px;
+      color: #0a0a0a;
+      border: #fff 2px solid;
+      border-radius: 10px;
+      font-weight: 600;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: 0.5s ease;
+}
+
+.about_me .About_content .btn-about button:hover{
+      background: linear-gradient(90deg,var(--white)15%,var(--color3)85%);
+}
+
+
+/* Hobbies design */
+
+.hobbies{
+     margin-top: 7%;
+     display: flex;
+     justify-content: center;
+}
+
+.hobbies .hobbies-content{
+      max-width: 600px;
+}
+
+.hobbies .hobbies-content span{
+      font-size: 2.5rem;
+      
+}
+
+.hobbies .hobbies-content h1{
+     font-size: 2.4rem;
+      text-align: center;
+        background: linear-gradient(90deg,var(--color3)15%,var(--white)85%);
+   -webkit-background-clip:Text;
+   -webkit-text-fill-color: transparent ;
+}
+
+.hobbies .hobbies-content p{
+      margin-top: 10px;
+}
+
+
+/* Footer */
+
+footer{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     margin-top: 6%;
+     margin-bottom: 3%;
+}
+
+
+
+.footer_links nav a{
+      margin: 20px;
+      color: var(--color3);
+      font-weight: 500;
+      border-bottom: 2px solid var(--white);
+}
+
+
+/* REsponsive design */
+
+@media screen   and (max-width:768px){
+     
+      /* Nav bar responce */
+     .header nav{
+           display: none;
+     }
+
+     .menu{
+
+          display: block;
+     }
+
+     /* HOME PAGE  */
+     .home-page{
+          flex-direction: column-reverse;
+          margin-top: 30%;
+     }
+
+     .home-page .content{
+           padding: 20px;
+           margin-top: -35px;
+     }
+
+     .home-page .content h1{
+          font-size: 2rem;
+        
+     }
+
+     .home-page .image_home img{
+           width: 300px;
+           height: 300px;
+           animation: hu__hu__ infinite 2s ease-in-out;
+           box-shadow: 0 0 30px var(--color3),0 0 40px var(--color3) , 0 0 50px var(--color3);
+     }
+
+     @keyframes hu__hu__ {
+    50% { transform: translateY(8px) }
+}
+
+     /* About Me */
+    
+     .about_me .About_content{
+           padding-right:15px;
+           padding-left: 15px;
+     }
+
+     .about_me .About_content h1{
+           font-size: 2rem;
+     }
+
+     /* Hobbies */
+     .hobbies .hobbies-content{
+           padding: 10px;
+     }
+     .hobbies .hobbies-content h1{
+           font-size: 2rem;
+     }
+
+
 }
