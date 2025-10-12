@@ -1,0 +1,150 @@
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=Dancing+Script:wght@400..700&family=Fredericka+the+Great&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Reem+Kufi:wght@400..700&display=swap');
+
+
+body{
+     /* background-color: black; */
+     background: var(--color-background-primary);
+     color: var(--color-text-primary);
+     margin: 0;
+     padding: 0;
+     padding-left: 30rem;
+     font-family: "poppins" , sans-serif;
+     background-repeat: no-repeat;
+    
+}
+
+
+:root{
+  /* 60% Primary (Background) - Clean and Bright */
+  --color-background-primary: #F7F7F7; /* Very Light Gray / Off-White */
+  
+  /* 30% Secondary (Text/Sections) - Dark and Professional */
+  --color-text-primary: #1C1C1C;      /* Deep Charcoal Gray */
+  --color-card-background: #FFFFFF;    /* Pure White for content blocks */
+  
+  /* 10% Accent (Buttons/Links/Highlights) - The "Wow" Pop */
+  --color-accent: #22D3EE;            /* Trendy Neon Cyan */
+  --color-accent-hover: #139DAF;      /* Darker Cyan for hover state */
+
+   --color5:#754ef9;
+
+
+
+}
+
+
+
+header{
+     background-color: var(--color-card-background);
+     position: fixed;
+     height: 100%;
+     width: 25rem;
+     top: 0;
+     left: 0;
+     padding: 10px;
+     box-shadow: 0 0 10px var(--color-text-primary);
+}
+
+.image-content {
+     display: flex;
+     align-items: center;
+     justify-content: space-evenly;
+}
+
+.image-content h2{
+     font-family: 'Kaushan Script', sans-serif;
+     text-align: center;
+     margin-top: -19px;
+     border-bottom: 2px solid var(--color5);
+    
+}
+
+
+.image-content .social-media{
+     margin-top: 30px;
+}
+
+.image-content .social-media a{
+      background-color: var(--color5);
+      padding: 10px;
+      border-radius: 50%;
+      margin: 10px;
+      border: 2px solid var(--color-text-primary);
+     
+      
+     
+      
+}
+
+.image-content .social-media a i{
+   
+      color: var(--color-background-primary);
+     
+     
+}
+
+header ul{
+      margin-left: -50%;
+      margin-top: 40px;
+}
+
+header ul li{
+     list-style: none;
+     margin-top: 20px;
+}
+
+header ul li a i{
+      
+      margin: 5px;
+      font-size: 1.3rem;
+}
+
+header ul li a{
+     text-decoration: none;
+     color: var(--color-text-primary);
+     font-weight: 600;
+     font-size: 1.2rem;
+     padding: 1rem 30%;
+     border-radius: 20px;
+     /* border-bottom: 2px solid var(--color5); */
+ 
+}
+
+
+
+header img{
+     width: 100px;
+     height: 100px;
+     object-fit: cover;
+     border-radius: 50%;
+     border: 2px solid #ffff;
+     border: 2px solid var(--color5);
+}
+
+
+.Home-page{
+      /* margin-top: 20%; */
+           padding-top: 20%;
+      padding-bottom: 22%;
+      max-width: 600px;
+}
+
+.Home-page .cta-button{
+      padding: 0.5rem 40px;
+      background-color: var(--color5);
+      border: 1px solid var(--color-text-primary);
+      cursor: pointer;
+      border-radius: 10px;
+      font-weight: 600;
+}
+
+/* About Me */
+
+.about-me{
+      padding-top: 20%;
+      padding-bottom: 22%;
+      max-width: 600px;
+}
