@@ -10,7 +10,7 @@ body{
      color: var(--color-text-primary);
      margin: 0;
      padding: 0;
-     padding-left: 30rem;
+     padding-left: 28rem;
      font-family: "poppins" , sans-serif;
      background-repeat: no-repeat;
     
@@ -126,19 +126,29 @@ header img{
 
 
 .Home-page{
-      /* margin-top: 20%; */
-           padding-top: 20%;
-      padding-bottom: 22%;
+      padding-top: 20%;
       max-width: 600px;
 }
 
-.Home-page .cta-button{
+h1{
+     background: linear-gradient(var(--color-accent)15%, var(--color5) 85%);
+     background-clip:Text;
+     -webkit-text-fill-color: transparent;
+}
+
+p{
+      font-weight: 600;
+}
+
+
+.cta-button{
       padding: 0.5rem 40px;
       background-color: var(--color5);
-      border: 1px solid var(--color-text-primary);
+      border: 2px solid var(--color-text-primary);
       cursor: pointer;
       border-radius: 10px;
-      font-weight: 600;
+      font-weight: 400;
+      color: var(--color-background-primary);
 }
 
 /* About Me */
@@ -147,4 +157,73 @@ header img{
       padding-top: 20%;
       padding-bottom: 22%;
       max-width: 600px;
+}
+
+
+.about-me p span{
+     color: var(--color5);
+     font-weight: 700;
+}
+
+
+/* Container for the Cards */
+.card-container {
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 20px; 
+    justify-content: center; 
+    padding: 20px 0;
+    
+}
+
+/* Style for each individual card */
+.education-card {
+    background-color: #ffffff; 
+    border-radius: 12px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    padding: 25px;
+    width: 100%;
+    max-width: 300px; 
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    text-align: left;
+    border-left: 5px solid var(--color5); /* Accent color on the left */
+   
+}
+
+/* Hover effect to make the card interactive */
+.education-card:hover {
+    transform: translateY(-5px); /* Moves the card up slightly */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Darker shadow on hover */
+}
+
+/* Styling the year */
+.card-year {
+    color: #555; /* Slightly muted color */
+    font-size: 1.1em;
+    font-weight: 700;
+    margin-bottom: 5px;
+ 
+}
+
+/* Styling the main title/course name */
+.card-title {
+    color: #333;
+    font-size: 1.3em;
+    font-weight: 600;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+/* Styling the description text */
+.card-description {
+    color: #666;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+/* Media Query for responsiveness - makes cards stack on small screens */
+@media (max-width: 768px) {
+    .education-card {
+        margin-bottom: 15px;
+    }
 }
