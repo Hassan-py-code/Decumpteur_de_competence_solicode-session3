@@ -10,7 +10,7 @@ body{
      color: var(--color-text-primary);
      margin: 0;
      padding: 0;
-     padding-left: 28rem;
+     padding-left: 27rem;
      font-family: "poppins" , sans-serif;
      background-repeat: no-repeat;
     
@@ -18,16 +18,12 @@ body{
 
 
 :root{
-  /* 60% Primary (Background) - Clean and Bright */
-  --color-background-primary: #F7F7F7; /* Very Light Gray / Off-White */
-  
-  /* 30% Secondary (Text/Sections) - Dark and Professional */
-  --color-text-primary: #1C1C1C;      /* Deep Charcoal Gray */
-  --color-card-background: #FFFFFF;    /* Pure White for content blocks */
-  
-  /* 10% Accent (Buttons/Links/Highlights) - The "Wow" Pop */
-  --color-accent: #22D3EE;            /* Trendy Neon Cyan */
-  --color-accent-hover: #139DAF;      /* Darker Cyan for hover state */
+
+  --color-background-primary: #F7F7F7; 
+  --color-text-primary: #1C1C1C;    
+  --color-card-background: #FFFFFF;    
+  --color-accent: #22D3EE;            
+  --color-accent-hover: #139DAF;      
 
    --color5:#754ef9;
 
@@ -46,6 +42,7 @@ header{
      left: 0;
      padding: 10px;
      box-shadow: 0 0 10px var(--color-text-primary);
+     /* display: none; */
 }
 
 .image-content {
@@ -89,17 +86,27 @@ header{
 header ul{
       margin-left: -50%;
       margin-top: 40px;
+
 }
 
 header ul li{
      list-style: none;
      margin-top: 20px;
+
 }
 
 header ul li a i{
       
       margin: 5px;
       font-size: 1.3rem;
+      color: var(--color5);
+      border-bottom: 2px solid var(--color-text-primary);
+      width: fit-content;
+      transition: 0.3s ease;
+}
+
+header ul li a i:hover{
+     transform: scale(1.2);
 }
 
 header ul li a{
@@ -109,9 +116,10 @@ header ul li a{
      font-size: 1.2rem;
      padding: 1rem 30%;
      border-radius: 20px;
-     /* border-bottom: 2px solid var(--color5); */
- 
+     transition: 0.3s ease;
+
 }
+
 
 
 
@@ -134,6 +142,8 @@ h1{
      background: linear-gradient(var(--color-accent)15%, var(--color5) 85%);
      background-clip:Text;
      -webkit-text-fill-color: transparent;
+     /* border-bottom: 3px solid var(--color-text-primary); */
+     /* width: fit-content; */   
 }
 
 p{
@@ -183,7 +193,7 @@ p{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     padding: 25px;
     width: 100%;
-    max-width: 300px; 
+    max-width: 340px; 
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     text-align: left;
     border-left: 5px solid var(--color5); /* Accent color on the left */
@@ -226,4 +236,92 @@ p{
     .education-card {
         margin-bottom: 15px;
     }
+}
+
+
+/* style my projects */
+.my_projcts{
+     display: flex; 
+    flex-wrap: wrap; 
+    gap: 20px; 
+    justify-content: center; 
+    padding: 20px 0;
+    margin-top: 12%;
+}
+
+.projects-card{
+     padding: 25px;
+     width: 100%;
+     max-width: 340px;
+     border-left: 5px solid var(--color5);
+     border-right: 5px solid var(--color-text-primary);
+       background-color: #ffffff; 
+    border-radius: 12px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+
+}
+
+.content-projects{
+      max-width: 500px;
+}
+
+
+.content-projects .skills-build p{
+      background-color: var(--color5);
+      padding: 0.3rem 25px;
+      color: var(--color-card-background);
+      border-radius: 10px;
+      border: 2px solid var(--color-text-primary);
+}
+
+
+.my_projcts img{
+      width: 100%;
+      transition: 0.4s ease;
+}
+
+.my_projcts img:hover{
+     transform: scale(1.1);
+}
+
+.my_projcts .skills-build{
+      display: flex;
+      gap: 20px;
+}
+
+.projects-links{
+    display: flex;
+    gap: 1rem;
+}
+
+.project-link{
+    color: var(--text-color);
+    /* font-size: 1.2rem; */
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    transition: color 0.3s ease;
+    
+}
+
+.project-link:hover{
+    color: var(--main-color);
+}
+
+.project-link i{
+     color: var(--color-card-background);
+    transition: 0.3s ease;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid var(--color-text-primary);
+    background-color: var(--color5);
+}
+
+.project-link i:hover{
+    transform: scale(1.05);
 }
