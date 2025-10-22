@@ -130,7 +130,17 @@ header img{
      border: 2px solid #ffff;
      border: 2px solid var(--color5);
 }
+.menu_nav{
+     position: relative;
+     display: none;
+}
 
+.menu_nav i{
+     position: absolute;
+     top: 6px;
+     left: -20px;
+     font-size: 2.5rem;
+}
 
 .Home-page{
       padding-top: 20%;
@@ -141,8 +151,7 @@ h1{
      background: linear-gradient(var(--color-accent)15%, var(--color5) 85%);
      background-clip:Text;
      -webkit-text-fill-color: transparent;
-     /* border-bottom: 3px solid var(--color-text-primary); */
-     /* width: fit-content; */   
+
 }
 
 p{
@@ -442,7 +451,9 @@ footer p{
       flex-direction: column;
       display: none;
     }
-
+    .menu_nav{
+       display: block;
+    }
 
     section{
          padding-inline: 15px;
@@ -506,6 +517,10 @@ footer p{
       display: flex;
       flex-direction: column;
       display: none;
+    }
+
+    .menu_nav{
+       display: block;
     }
 
     header nav{
