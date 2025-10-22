@@ -21,7 +21,7 @@
                  <h1>Hassan Achehri</h1>
              <h2>Front-End Developer</h2>
              <div class="social-media">
-                 <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                 <a href="#"> <i class="fa-brands fa-facebook"></i></a>
                  <a href="#"><i class="fa-brands fa-linkedin"></i></a>
                  <a href="#"><i class="fa-brands fa-instagram"></i></a>
                  <a href="#"><i class="fa-brands fa-github"></i></a>
@@ -32,11 +32,10 @@
 
          <nav>
             <ul>
-               <li><a href="#"> <i class="fa-solid fa-house"></i> Home</a></li>
-                <li><a href="#"> <i class="fa-solid fa-user"></i> About Me</a></li>
+               <li><a href="#"> <i class="fa-solid fa-house"></i> Home </a></li>
+                <li><a href="#About"> <i class="fa-solid fa-user"></i> About Me</a></li>
                 <li><a href="#"><i class="fa-solid fa-user-graduate"></i> Education</a></li>
                 <li><a href="#"> <i class="fa-solid fa-business-time"></i>Projects</a></li>
-                <li><a href="#"> <i class="fa-solid fa-hard-drive"></i> Service</a></li>
                 <li><a href="#"> <i class="fa-solid fa-id-card-clip"></i>Contact</a></li>
             </ul>
          </nav>
@@ -54,7 +53,7 @@
      </section>
 
      <section>
-         <div class="about-me">
+         <div class="about-me"  id="About">
               <h1>About Me & Skills</h1>
                 <p>
                    Hi, I'm <span>Hassan Achehrri,</span> and I bring designs to life on the web. My focus is on creating responsive, user-friendly, and visually engaging digital experiences. I start my process in <span>Figma</span>, where I design and prototype user interfaces. I then translate these static designs into fully functional websites using core front-end technologies: <span>Html</span> for structure, <span>CSS</span> for styling and modern layouts, and <span>JavaScript (Js)</span> for interactivity and dynamic features. My project portfolio demonstrates a commitment to clean code, attention to detail in design execution, and a passion for turning complex problems into elegant web solutions.
@@ -93,9 +92,13 @@
     </div>
 </section>
 
-<section class="my_projcts">
+<section class="projects">
+        <h1>My Projects</h1>
+     <div class="my_projcts">
      <div class="projects-card">
-        <img src="images/Procosmetics.jpeg" alt="cosmetics brand" >
+        <div class="image-cards">
+           <img src="images/Procosmetics.jpeg" alt="cosmetics brand" >
+        </div>
         <div class="content-projects">
              <h3>Lorem ipsum dolor sit.</h3>
              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, autem!</p>
@@ -116,7 +119,9 @@
      </div>
 
      <div class="projects-card">
-        <img src="images/food-.jpg" alt="food" >
+      <div class="image-cards">
+              <img src="images/food-.jpg" alt="food" >
+      </div>
         <div class="content-projects">
              <h3>Lorem ipsum dolor sit.</h3>
              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, autem!</p>
@@ -138,7 +143,9 @@
      </div>
 
      <div class="projects-card">
-        <img src="images/car-projects.jpeg" alt="Renat car" >
+        <div class="image-cards">
+          <img src="images/car-projects.jpeg" alt="Renat car" >
+        </div>
         <div class="content-projects">
              <h3>Lorem ipsum dolor sit.</h3>
              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur, autem!</p>
@@ -157,10 +164,55 @@
                   </div>
         </div>
      </div>
+   </div>
      
 </section>
 
+<!-- <section>
+     <div class="contact-Me">
+        <div class="input-types">
+            <form action="#" method="post">
+                 <input type="text" placeholder="Name" required>
+                 <input type="email" placeholder="Email" required>
+                 <textarea name="Message" id="" placeholder="Message" required></textarea>
+                 <input type="submit" >
+            </form>
+        </div>
+     </div>
+</section> -->
+    
+ <!-- creat contact section -->
+       <div class="contact" id="contact">
+         <h2 class="contact-title">Get In Touch</h2>
+         <form action="#" class="contact-form">
+            <div class="form-group">
+                <label for="name" class="form-lable">Name</label>
+                <input type="text" id="name" class="form-input" required>
+                
+            </div>
 
+            <div class="form-group">
+                <label for="email" class="form-lable">Email</label>
+                <input type="email" id="email" class="form-input" required>
+            </div>
+
+              <div class="form-group">
+                <label for="subject" class="form-lable">Subject</label>
+                <input type="text" id="subject" class="form-input" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message" class="form-lable">Message</label>
+               <textarea id="message" class="form-textarea"  required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Send Message</button>
+         </form>
+       </div>
+        
+
+       <footer>
+          <p>&copy; 2025 Mr Hassan</p>
+       </footer>
 
 
 </body>
